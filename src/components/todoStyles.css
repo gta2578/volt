@@ -1,0 +1,128 @@
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 575px) {
+  .input-wrapper {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.input-wrapper input {
+  width: 300px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+@media screen and (max-width: 575px) {
+  .input-wrapper input {
+    width: 100%;
+  }
+}
+.input-wrapper .add-todo-btn {
+  margin-left: 40px;
+  padding: 8px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(to top, #009750, #66fc52);
+  border: 1.5px solid #58e958;
+  color: #ffffff;
+  cursor: pointer;
+}
+@media screen and (max-width: 575px) {
+  .input-wrapper .add-todo-btn {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
+.todo-filters-wrapper {
+  max-width: 458px;
+  width: 458px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 575px) {
+  .todo-filters-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.todo-filters-wrapper .todo-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-filters-wrapper .todo-filters .filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  padding: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+.todo-filters-wrapper .todo-filters .filter.filter--active {
+  background: #2c3140;
+  border: 1.5px solid #50d5ff;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.todo-list {
+  max-width: 550px;
+  width: 550px;
+  margin-top: 30px;
+  list-style-type: none;
+  text-align: center;
+}
+@media screen and (max-width: 575px) {
+  .todo-list {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.todo-list .todo-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  word-break: break-word;
+}
+.todo-list .todo-item input {
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+.todo-list .todo-item label {
+  display: flex;
+  align-items: center;
+}
+.todo-list .todo-item label .todo-item__text {
+  text-align: left;
+}
+
+.count-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.count-wrapper .list-items-count {
+  margin-right: 6px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.count-wrapper .count-value {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=todoStyles.css.map */
